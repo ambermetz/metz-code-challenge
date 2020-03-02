@@ -4,8 +4,10 @@ import './Employee.css';
 
 const employee = props => (
   <article className='Employee'>
-    <h1>Title</h1>
-    <h1>Test</h1>
+    <h1>Employee: {props.name}</h1>
+    <p>Employee ID: {props.id}</p>
+    <p>Salary: {props.salary}</p>
+    <p>Age: {props.age}</p>
   </article>
 );
 

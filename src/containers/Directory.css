@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+.Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-size: 30px;
+  background-color: #162e4b;
+  color: #fff;
+  font-family: 'Comfortaa', cursive;
+}
+
+.Logo,
+.fa-map-marker-alt {
+  color: rgb(255, 111, 0);
+}
+
 .Employees {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
   margin: auto;
+}
+
+@media (max-width: 765px) {
+  .Nav {
+    font-size: 15px;
+  }
 }

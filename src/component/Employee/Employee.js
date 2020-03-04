@@ -1,14 +1,26 @@
 import React from 'react';
 
-import './Employee.css';
+import classes from './Employee.css';
 
 const employee = props => (
-  <article className='Employee'>
-    <h1>Employee: {props.name}</h1>
-    <p>Employee ID: {props.id}</p>
-    <p>Salary: {props.salary}</p>
-    <p>Age: {props.age}</p>
-    <p>Image? {props.profile_image}</p>
+  <article className={classes.Employee}>
+    <section className={classes.EmployeeSection}>
+      <div className={classes.Image}>
+        <i className='far fa-user fa-4x'></i>
+      </div>
+      <div className={classes.EmployeeInfo}>
+        <p>Employee ID: {props.id}</p>
+        <p>Name: {props.name}</p>
+        <p>
+          Salary:{' '}
+          {Intl.NumberFormat('en', {
+            style: 'currency',
+            currency: 'USD'
+          }).format(props.salary)}
+        </p>
+        <p>Age: {props.age}</p>
+      </div>
+    </section>
   </article>
 );
 

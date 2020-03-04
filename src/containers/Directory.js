@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import Employee from '../component/Employee/Employee';
-import './Directory.css';
+import classes from './Directory.css';
 
 class Directory extends Component {
   state = {
@@ -26,14 +26,20 @@ class Directory extends Component {
           id={employee.id}
           salary={employee.employee_salary}
           age={employee.employee_age}
-          profile_image={employee.profile_image}
+          profile_image={employee.profile_image} // The api does not actually provide images.  Keeping this here to show that I know how to get them but I am using an icon in place of the image.
         />
       );
     });
 
     return (
       <div>
-        <section className='Employees'>{employees}</section>
+        <nav className={classes.Nav}>
+          <span className={classes.Logo}>
+            <i className='fas fa-map-marker-alt'></i>dynamo
+          </span>
+          metrics Code Challenge
+        </nav>
+        <section className={classes.Employees}>{employees}</section>
       </div>
     );
   }

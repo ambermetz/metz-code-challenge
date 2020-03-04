@@ -11,6 +11,14 @@
   font-family: 'Comfortaa', cursive;
 }
 
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comfortaa', cursive;
+  text-shadow: 2px 2px 2px #ccc;
+}
+
 .Logo,
 .fa-map-marker-alt {
   color: rgb(255, 111, 0);
@@ -24,8 +32,17 @@
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  .Header {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 765px) {
   .Nav {
-    font-size: 15px;
+    font-size: 20px;
+  }
+  .Header {
+    font-size: 20px;
   }
 }

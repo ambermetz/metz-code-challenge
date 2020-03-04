@@ -39,6 +39,7 @@ class Directory extends Component {
           </span>
           metrics Code Challenge
         </nav>
+        <h1 className={classes.Header}>Employee Directory</h1>
         <section className={classes.Employees}>{employees}</section>
       </div>
     );

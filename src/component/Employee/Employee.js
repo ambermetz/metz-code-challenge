@@ -9,7 +9,7 @@ const employee = props => (
         <i className='far fa-user fa-4x'></i>
       </div>
       <div className={classes.EmployeeInfo}>
-        <p>Employee ID: {props.id}</p>
+        <p>ID: {props.id}</p>
         <p>Name: {props.name}</p>
         <p>
           Salary:{' '}

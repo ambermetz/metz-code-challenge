@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 .Employee {
-  width: 70%;
+  width: 40%;
   padding: 16px;
   text-align: center;
   border: 1px solid #eee;
@@ -49,6 +49,12 @@ p {
   align-items: flex-start;
   padding: 0 0 0 50px;
   border-left: 2px solid #ccc;
+}
+
+@media (max-width: 1200px) {
+  .Employee {
+    width: 60%;
+  }
 }
 
 @media (max-width: 765px) {
